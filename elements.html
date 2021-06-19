@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body  {
+	background-color: #22273A;
+}
+      .column {
+        float: left;
+        margin: 0 auto;
+        padding: 10px;
+      }
+
+      .left {
+        width: 50%;
+      }
+
+      .right {
+        width: 50%;
+      }
+
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+.square {
+	height: 517px;
+	width: 375px;
+	background-color: #ffffff;
+}
+.square2 {
+	height: 233px;
+	width: 325px;
+	background-color: #22273A;
+	border-radius: 5px;
+	border: 2px solid white;
+}
+
+.square3 {
+	height: 176px;
+	width: 375px;
+	background-color: #22273A;
+	border-radius: 17px 17px 0px 0px;
+	border: 2px solid white;
+}
+
+.circle {
+        height: 50px;
+        width: 50px;
+        background-color: #ffffff;
+	border-radius: 50%;
+}
+
+.form_radio_btn {
+	margin-bottom: 10px;
+}
+.form_radio_btn input[type=radio] {
+	vertical-align: baseline;
+	display: none;
+}
+.form_radio_btn label {
+        height: 51px;
+        width: 325px;
+	display: inline-block;
+	line-height: 51px;
+text-indent: 10px;
+	border: 1px solid #ffffff;
+	border-radius: 5px;
+	user-select: none;
+	position: relative;
+        color: #ffffff;
+        font-size: 16;
+	text-align: left;
+}
+ 
+.form_radio_btn input[type=radio]:checked + label {
+	background: #ffffff;
+	background: url(rb.jpeg) 0 0 no-repeat;
+        color: #22273A;
+        font-size: 16;
+}
+        .button-container {
+          padding-top: 0px;
+          padding-left: 24px;
+        }
+        .button {
+          background-color: #FFFFFF;
+          color: black;
+          border: 5px hidden;
+          outline: none;
+          text-align: center;
+          font-size: 23px;
+          cursor: pointer;
+          width: 325px; height: 51px;
+          border-radius: 60px;
+        }
+        .button:active {
+          background-color: #22273A;
+          border: 2px solid white;
+          color: white;
+        }
+input[type=text], select {
+  width: 325px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: 5px;
+  box-sizing: border-box;
+  border: 0px;
+box-shadow: inset 0px 10px 8px rgba(0, 0, 0, 0.2);
+}
+
+.toggle {
+  background-color: #22273A;
+  width: 62px;
+  height: 30px;
+  border-radius: 60px;
+  border: 2px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.toggle-active {
+  background-color: blue;
+  width: 64px;
+  height: 30px;
+  border-radius: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+input {
+  display: none;
+}
+
+.slider {
+  height: 24px;
+  width: 24px;
+  background-color: white;
+  border-radius: 12px;
+  margin: 4px;
+}
+
+input:checked + .toggle {
+  background-color: white;
+  border: 1px;
+  width: 66px;
+  height: 34px;
+}
+
+input:checked + .toggle > .slider {
+  background-color: #22273A;
+  height: 26px;
+  width: 26px;
+  align-self: flex-end;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+	<div class="column">
+		<div class="square"></div>
+	</div>
+	<div class="column">
+		<div class="square2"></div>
+		<div class="circle" style="margin-top:5px;margin-bottom:5px"></div>
+		<div class="square3"></div>
+	</div>
+</div>
+<div class="form_radio_btn">
+	<input id="radio-1" type="radio" name="radio" value="1" checked>
+	<label for="radio-1">Радиокнопка</label>
+	<input id="radio-2" type="radio" name="radio" value="2">
+	<label for="radio-2">Радиокнопка</label>
+</div>
+    <div class="button-container">
+      <button class="button">Кнопка</button>
+      <button class="button" style="width:210px">Кнопка</button>
+    </div>
+<div>
+<input type="text" style="height:51px">
+</div>
+<div>
+<input type="text" style="height:142px">
+</div>
+<div>
+<input type="text" style="width:128px;height:51px">
+</div>
+<div>
+<input type="text" style="width:51px;height:51px">
+<input type="text" style="width:51px;height:51px">
+<input type="text" style="width:51px;height:51px">
+<input type="text" style="width:51px;height:51px">
+</div>
+
+<input type="checkbox" id="example"/>
+<label for="example" class="toggle">
+  <div class="slider"></div>
+</label>
+
+</body>
+</html> 
